@@ -34,6 +34,7 @@ const DoctorHighlights = () => {
         >
           <motion.div variants={imageVariants} className="doctor-image">
             <div className="image-wrapper">
+              <div className="portrait-glow"></div>
               <img src="/doctor.png" alt="Dr. Sameer Phadke" className="surgeon-img" />
               <div className="experience-tag">
                 25 YEARS EXP.
