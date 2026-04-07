@@ -19,19 +19,19 @@
   padding: 0 4rem;
 }
 
-/* Navbar Scrolled State */
+/* Navbar Scrolled State (Stay White & Sticky) */
 .main-header.scrolled .navbar {
-  background: rgba(15, 23, 42, 0.9) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  padding: 1.25rem 0;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem 0;
 }
 
 .main-header.scrolled .logo-text,
 .main-header.scrolled .nav-links > li > a {
-  color: var(--white);
+  color: var(--secondary);
 }
 
 /* Navbar Base (Clean White Design) */
