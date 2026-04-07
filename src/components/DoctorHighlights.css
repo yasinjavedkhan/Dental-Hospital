@@ -1,0 +1,179 @@
+.doctor-section {
+  padding: 8rem 0;
+  background-color: var(--white);
+  position: relative;
+}
+
+.doctor-card {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 32px;
+}
+
+.doctor-image {
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.surgeon-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition-slow);
+}
+
+.doctor-card:hover .surgeon-img {
+  transform: scale(1.05);
+}
+
+.experience-tag {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: var(--primary);
+  color: var(--white);
+  padding: 1.25rem 2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: 24px 0 0 0;
+  box-shadow: -5px -5px 15px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.doctor-info .tagline {
+  color: var(--primary);
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.doctor-info h2 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+  line-height: 1.1;
+}
+
+.credentials {
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.doctor-bio {
+  margin-bottom: 3rem;
+}
+
+.doctor-bio p {
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.qualifications-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.qual-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.qual-item svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.qual-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--secondary);
+}
+
+.qual-item p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.doctor-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn-doctor {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1.25rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: var(--transition-normal);
+  box-shadow: 0 10px 20px var(--primary-glow);
+}
+
+.btn-doctor:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px var(--primary-glow);
+}
+
+.verified-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  .doctor-card {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-section {
+    padding: 4rem 0;
+  }
+  
+  .doctor-info h2 {
+    font-size: 2.5rem;
+  }
+  
+  .qualifications-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .doctor-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .btn-doctor {
+    width: 100%;
+    text-align: center;
+  }
+}
