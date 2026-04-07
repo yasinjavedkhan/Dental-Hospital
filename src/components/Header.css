@@ -34,12 +34,13 @@
   color: var(--white);
 }
 
-/* Navbar Base (Transparent by default) */
+/* Navbar Base (Clean White Design) */
 .navbar {
-  background-color: transparent;
-  color: var(--white);
-  padding: 1.5rem 0;
+  background-color: var(--white);
+  color: var(--secondary);
+  padding: 1.25rem 0;
   transition: all 0.4s var(--transition-normal);
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar .container {
@@ -59,11 +60,6 @@
   font-weight: 800;
   line-height: 1;
   color: var(--secondary);
-  transition: color 0.3s;
-}
-
-.main-header:not(.scrolled) .logo-text {
-  color: var(--white);
 }
 
 .logo-sub {
@@ -78,25 +74,21 @@
   display: flex;
   gap: 3rem;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .nav-links > li > a {
   padding: 0.5rem 0;
   position: relative;
-  color: var(--white);
+  color: var(--secondary);
   text-decoration: none;
   transition: var(--transition-fast);
 }
 
-.scrolled .nav-links > li > a {
-  color: var(--white);
-}
-
-.main-header:not(.scrolled) .nav-links > li > a {
-  color: var(--white);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+.nav-links > li > a.active {
+  color: var(--primary);
 }
 
 .nav-links > li > a::after {
